@@ -485,17 +485,21 @@
                         placeholder="Text input"></textarea>
                 </div>
 
-                <div>
-                    <svg width="10" height="8">
-                        <use href="/images/icons.svg#icon-checkbox"></use>
-                    </svg>
-                    <input type="checkbox" name="policy" id="checkbox">I accept the terms and conditions of the
-                    Privacy Policy
-                    <label for="checkbox" for="checkbox"></label>
+                <div class="modal-check">
+                    <input class="modal-check-input visually-hidden" type="checkbox" name="policy" id="checkbox">
+                    <span class="modal-check-wrap">
+                        <svg width="10" height="8">
+                            <use class="modal-checkbox-icon" href="/images/icons.svg#icon-checkbox"></use>
+                        </svg>
+                    </span>
+                    I
+                    accept the terms and
+                    conditions of the<a href="">Privacy Policy</a>
+                    <label class="modal-check-label" for="checkbox" for="checkbox"></label>
                 </div>
 
                 <div>
-                    <button type="submit" class="button">Submit</button>
+                    <button type="submit" class="button modal-button">Submit</button>
                 </div>
             </form>
 
