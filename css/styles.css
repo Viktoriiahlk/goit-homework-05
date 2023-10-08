@@ -515,7 +515,7 @@ img {
     fill: var(--color-bg-section);
 }
 
-/* Modal
+/* Modal*/
 
 .backdrop {
     position: fixed;
@@ -530,7 +530,6 @@ img {
 
 .is-hidden {
     visibility: visible;
-
     opacity: 1;
 }
 
@@ -551,17 +550,20 @@ img {
     position: absolute;
     top: 24px;
     right: 24px;
-    border-radius: 4px;
+    border-radius: 50%;
+    background-color: var(--color-background);
+
 }
 
 .modal-title {
-    display: inline-block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5%;
     margin-bottom: 16px;
     padding-top: 48px;
     max-width: 360px;
+    text-align: center;
+    padding-bottom: 16px;
 }
 
 .modal-label {
@@ -570,6 +572,17 @@ img {
     margin-bottom: 4px;
     font-weight: 400;
     line-height: 14px;
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.modal-icon-input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
 }
 
 .modal-input {
@@ -601,4 +614,4 @@ img {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: -0.03em;
-}*/
+}
