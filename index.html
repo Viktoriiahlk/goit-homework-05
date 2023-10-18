@@ -435,21 +435,33 @@
                     </li>
                 </ul>
             </div>
+            <div class="form-footer">
+                <p class="form-title-footer">Subscribe</p>
+                <form>
+                    <label for="text"></label>
+                    <input class="footer-input" type="text" name="text" placeholder="E-mail">
+                    <button class="footer-button" type="submit">Subscribe
+                        <svg width="24" height="24">
+                            <use href="/images/icons.svg#icon-subscribe"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <!--Modal-->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-open" data-modal>
 
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
-                <svg width="8" height="8">
+                <svg class="close-icon" width="8" height="8">
                     <use href="/images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2 class="modal-title">Leave your contact and we will call you back</h2>
+            <p class="modal-title">Leave your contact and we will call you back</p>
             <form action="">
 
-                <div>
+                <div class="madal-field">
                     <label class="modal-label" for="name">Name</label>
                     <div class="modal-input-wrap">
                         <svg class="modal-icon-input" width="18" height="18">
@@ -459,7 +471,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="madal-field">
                     <label class="modal-label" for="phone">Phone</label>
                     <div class="modal-input-wrap">
                         <svg class="modal-icon-input" width="18" height="18">
@@ -469,7 +481,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="madal-field">
                     <label class="modal-label" for="email">Email</label>
                     <div class="modal-input-wrap">
                         <svg class="modal-icon-input" width="18" height="18">
@@ -479,7 +491,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="modal-textarea-div">
                     <label class="modal-label" for="comment">Comment</label>
                     <textarea class="modal-textarea" type="text" name="comment" id="comment"
                         placeholder="Text input"></textarea>
@@ -487,15 +499,17 @@
 
                 <div class="modal-check">
                     <input class="modal-check-input visually-hidden" type="checkbox" name="policy" id="checkbox">
-                    <span class="modal-check-wrap">
-                        <svg width="10" height="8">
-                            <use class="modal-checkbox-icon" href="/images/icons.svg#icon-checkbox"></use>
-                        </svg>
-                    </span>
-                    I
-                    accept the terms and
-                    conditions of the<a href="">Privacy Policy</a>
-                    <label class="modal-check-label" for="checkbox" for="checkbox"></label>
+
+                    <label class="modal-check-label" for="checkbox" for="checkbox">
+                        <span class="modal-check-wrap">
+                            <svg width="10" height="8">
+                                <use class="modal-checkbox-icon" href="/images/icons.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                        <p>
+                            I accept the terms and
+                            conditions of the<a href="">Privacy Policy</a></p>I
+                    </label>
                 </div>
 
                 <div>
