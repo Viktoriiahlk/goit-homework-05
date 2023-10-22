@@ -546,6 +546,7 @@ img {
     margin-bottom: 16px;
 }
 
+
 .footer-button {
     display: inline-flex;
     border-radius: 4px;
@@ -627,6 +628,7 @@ img {
 .modal-title {
     font-size: 16px;
     font-weight: 500;
+    letter-spacing: 0.02em;
     line-height: 1.5;
     margin-bottom: 16px;
     padding-top: 48px;
@@ -693,6 +695,7 @@ img {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
+    letter-spacing: 0.02em;
     border-radius: 4px;
     transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -725,6 +728,7 @@ img {
     display: flex;
     font-size: 12px;
     font-weight: 400;
+    letter-spacing: 0.02em;
     align-items: center;
     color: var(--color-modal);
     margin-bottom: 24px;
