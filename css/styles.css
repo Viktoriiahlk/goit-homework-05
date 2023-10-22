@@ -640,13 +640,15 @@ img {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .modal-close:hover,
 .modal-close:focus {
     background-color: var(--color-pressed-stele);
     border: none;
 }
 
-.modal-close:hover+.close-icon {
+.modal-close:hover .close-icon,
+.modal-close:focus .close-icon {
     fill: #ffffff;
 }
 
@@ -788,8 +790,10 @@ img {
     margin-left: 5px;
 }
 
-.modal-check-input:checked+.check-span {
+.modal-check-input:checked+.modal-check-label>.check-span {
     background-color: var(--color-pressed-stele);
+    border: none;
+    fill: var(--color-bg-section);
 }
 
 
